@@ -1,6 +1,12 @@
 #!/usr/bin/perl
-print "Enter your name: ";
+use LWP::Simple;
 
-$name=<STDIN>;
+$xml = get "https://w1.weather.gov/xml/current_obs/KORD.xml";
 
-print "Hello, ${name} ... you will soon be a Perl addict!";
+@lines = split(/\n/, $xml);
+
+foreach $line (@lines) {
+    if ($line =~ /<([^>]+)>([^<]*)<\/([^>]+)>/) {
+        print "$1: $2\n";
+    }
+}

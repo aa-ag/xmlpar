@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- root element: "note" -->
+<!-- tags are case-sensitive -->
+<!-- between tags is "content" -->
+<!-- indentation does not matter -->
+<note>
+    <to>Person 2</to>
+    <from>Person 1</from>
+    <heading>Reminder</heading>
+    <body>Remember about this weekend!</body>
+</note>

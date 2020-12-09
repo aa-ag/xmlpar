@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library>
+    <book country="England">
+        <title>Romeo and Juliet</title>
+        <author>Shakespeare</author>
+        <!-- you can have multiple of the same element -->
+        <!-- only one attribute tho -->
+        <year>1595</year>
+    </book>
+    <book country="United States">
+        <title>Stephen King</title>
+        <author>The Shining</author>
+        <year>1977</year>
+    </book>
+</library>

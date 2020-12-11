@@ -9,8 +9,8 @@
         <year>1595</year>
     </book>
     <book country="United States">
-        <title>Stephen King</title>
-        <author>The Shining</author>
+        <title>The Shining</title>
+        <author>Stephen King</author>
         <year>1977</year>
     </book>
 </library>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <library>
+    <name>DG Public Library</name>
     <book country="England">
         <title>Romeo and Juliet</title>
         <author>Shakespeare</author>

@@ -1,29 +1,17 @@
 from xml.dom import minidom
 
-doc = minidom.parse("xmpl4.xml")
+doc = minidom.parse("xmpl2.xml")
 
 # doc.getElementsByTagName returns NodeList
 name = doc.getElementsByTagName("name")[0]
 print(name.firstChild.data)
 
-staffs = doc.getElementsByTagName("staff")
-for staff in staffs:
-        sid = staff.getAttribute("id")
-        nickname = staff.getElementsByTagName("nickname")[0]
-        salary = staff.getElementsByTagName("salary")[0]
-        print("id:%s, nickname:%s, salary:%s" %
-              (sid, nickname.firstChild.data, salary.firstChild.data))
-
-# import xml.dom.minidom
-  
-# docs = xml.dom.minidom.parse("xmpl2.xml") 
-  
-# # print(docs.nodeName) #document
-# print(docs.firstChild.tagName)
-
-# books = docs.getElementsByTagName("book")
-# print(books.firstChild.data)
-# print([book.getAttribute("country") for book in books])
+books = doc.getElementsByTagName("book")
+for book in books:
+        title = book.getElementsByTagName("title")[0]
+        author = book.getElementsByTagName("author")[0]
+        country = book.getAttribute("country")
+        print("Title: %s, Author: %s, Country: %s" % (title.firstChild.data, author.firstChild.data, country) )
 
 '''
 https://github.com/python/cpython/blob/3.9/Lib/xml/dom/minidom.py
